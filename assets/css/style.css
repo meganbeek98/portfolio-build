@@ -57,13 +57,11 @@ section {
 }
 
 .hero {
-    background-color: #40E0D0;
+    background-color: #8a2be2;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
     border-bottom: 5px solid;
     border-top: 5px solid;
 }
@@ -72,6 +70,7 @@ section {
     flex-wrap: wrap;
     font-size: 36px;
     flex: 2 30%;
+    border-bottom: 3px solid;
 }
 
 .work {
@@ -82,12 +81,18 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    border-left: 3px solid #000000;
+}
+.work:hover {
+    background-color: #747171;
+    opacity: 80%;
 }
 
 .work h2 {
-    padding: 10px;
+    padding-top: 10px;
+    padding-right: 80px;
     font-size: 40px;
-    border-right: 3px solid;
+    border-bottom: 3px solid #000000;
 }
 
 .showcase {
@@ -95,18 +100,40 @@ section {
     display: flex;
     flex-wrap: wrap;
     border: 5px;
-
 } 
 
 .showcase img {
     border: 2px solid #000000;
-    width: 100%;
     margin: 10px;
     border-radius: 10px;
     opacity: 60%;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    
 }
+.showcase-larger img:hover {
+    border: 6px solid #40E0D0;
+    opacity: 100%;
+}
+.showcase-larger {
+    border: 6px solid #8a2be2;
+    margin: 10px;
+    border-radius: 10px;
+    opacity: 100%;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+
+}
+.showcase-larger img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
 .showcase img:hover {
-    border: 4px solid #8a2be2;
+    border: 4px solid #40E0D0;
     opacity: 100%;
 
 }
@@ -126,7 +153,7 @@ section {
 .contact h2 {
     padding: 10px;
     font-size: 40px;
-    border-right: 3px solid;
+    border-bottom: 3px solid;
 }
 
 .contact-links {
@@ -148,6 +175,7 @@ section {
 }
 
 .flexbox {
+    padding-left: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -161,7 +189,43 @@ section {
 }
 
 .footer {
+    display: flex;
+    align-items: center;
     background-color: #000000;
     width: 100%;
-    line-height: 50px;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.footer img {
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        /*this will be applied on any screen smaller that 900px */ 
+    }
+    header h1 {
+        width: 100%;
+        text-align: center
+    }
+    .header nav ul {
+        margin: top 20%;
+        width: 100%;
+        justify-content: center;
+    }
+    .header nav ul li a {
+        font-size: 20px;
+    }
+    .footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
 }
