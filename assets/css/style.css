@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 20px 35px;
+    background-color: pink; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("https://i.pinimg.com/originals/41/82/a9/4182a9dd330c6442c4a1fbc78274d838.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 9999;
+
+}
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #40E0D0;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+header a {
+    text-decoration: none;
+    color: #40E0D0;
+}
+header a:hover {
+    color:blueviolet
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+header nav ul li a:hover {
+    color: blueviolet;
+    text-shadow: 1 1 20px rgba(0,0,0,0.5);
+}
+section {
+    padding: 60px;
+}
+
+.hero {
+    background-color: #40E0D0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+.hero h2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 36px;
+    flex: 2 30%;
+}
+.about-me {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.work {
+    background-color: #DCDCDC;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+}
+.work h2 {
+    display: flex;
+    font-size: 36px;
+    flex: 2 30%;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.work article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.work0 {
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.work1 {
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.work2 { 
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.work3 {
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.work4 {
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
