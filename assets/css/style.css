@@ -12,7 +12,6 @@ header {
     position: sticky;
     top: 0;
     padding: 20px 35px;
-    background-color: pink; 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -34,7 +33,7 @@ header a {
     color: #40E0D0;
 }
 header a:hover {
-    color:blueviolet
+    color: #8a2be2;
 }
 header nav {
     margin: 7px 0;
@@ -53,7 +52,7 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 header nav ul li a:hover {
-    color: blueviolet;
+    color: #8a2be2;
     text-shadow: 1 1 20px rgba(0,0,0,0.5);
 }
 section {
@@ -143,4 +142,60 @@ section {
     flex-wrap: wrap;
     align-items: center;
 
+}
+
+/* PARENT CONTAINER */
+.contact {
+    background-color: #8a2be2;
+    padding: 40px 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid;
+    border-top: 5px solid;
+}
+/* CHILDREN */
+.contact h2 {
+    padding: 10px;
+    font-size: 40px;
+    border-right: 3px solid;
+}
+.phone {
+    padding: 10px 10px 10px 20px;
+    font-size: 25px;
+}
+.phone a {
+    font-size: 20px;
+    padding: 10px 10px 10px 20px;
+}
+.email {
+    padding: 10px 10px 10px 20px;
+    font-size: 25px;
+}
+.email a {
+    font-size: 20px;
+    padding: 10px 10px 10px 20px;
+    color: #000000;
+}
+.LinkedIn {
+    padding: 10px 10px 10px 20px;
+    font-size: 25px;
+}
+.LinkedIn a {
+    font-size: 20px;
+    padding: 10px 10px 10px 20px;
+    color: #000000;
+}
+
+
+
+
+
+.section-title {
+    font-size: 48px;
+    border-right: 3px solid;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
